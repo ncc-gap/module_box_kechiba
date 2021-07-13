@@ -12,6 +12,6 @@ WORKDIR /tools
 RUN wget https://faculty.washington.edu/browning/beagle/beagle.28Jun21.220.jar
 RUN ln -s $( find /tools -name "beagle.*.jar" ) beagle.jar
 
-ENV CLASSPATH /tools/beagle.28Jun21.220.jar:$CLASSPATH
+ENV CLASSPATH /tools/beagle.jar:$CLASSPATH
 ENV PATH /tools:$PATH
 
